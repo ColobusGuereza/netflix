@@ -1,0 +1,36 @@
+.features {
+    padding: 2.4rem;
+
+    &__title {
+        padding-bottom: 1.6rem;
+    }
+    
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.6rem;
+
+    }
+
+    &__feature {
+        background: linear-gradient(to bottom right, rgb(25, 34, 71), rgb(33,14,23));
+        border-radius: 1.5rem;
+
+        display: grid;
+        grid-template-rows: repeat(3, min-content);
+        padding: 2.4rem 1.5rem 1.5rem 1.5rem;
+        gap: 1.5rem;
+        
+        &-text {
+            color: rgba(white, 0.7);
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+
+        &-icon {
+            grid-row: 3;
+            justify-self: end;
+            margin-right: -1rem;
+        }
+    }
+}
