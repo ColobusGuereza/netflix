@@ -1,14 +1,15 @@
+@use "../abstracts/variables";
+
 h1 {
     font-size: 32px;
+    font-family: variables.$main-font;
 }
 
 h2 {
     font-size: 1.8rem;
     font-weight: 500;
-    font-family: sans-serif;
 }
 
 h3 {
-    font-family: sans-serif;
     font-weight: 500;
 }

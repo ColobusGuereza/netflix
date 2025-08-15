@@ -1,0 +1,80 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    font-weight: 400;
+    gap: 3.6rem;
+    
+    &__cta {
+
+        &-h3 {
+            text-align: start;
+            font-size: 1.6rem;
+            font-weight: 400;
+            padding-bottom: 1rem;
+        }
+
+        &-input-wrapper {
+            position: relative;
+            width: 100%;          
+        }
+
+        &-input-email {
+            width: 100%;
+            padding: 1rem;
+            background-color: rgba(22,22,22,0.7);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 4px;
+            border-color:rgba(128,128,128,0.7);
+        }
+
+        &-input-label {
+            color: rgba(white, 0.7);
+            font-size: 1.6rem;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        &-input-email:focus + .footer__cta-input-label {
+            top: 0rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__phone {
+        opacity: 0.7;
+        font-size: 1.6rem;
+        a {
+            color: currentColor;
+        }
+    }
+
+    &__links {
+        list-style: none; 
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(27.5rem, 1fr));
+        
+        li {
+            padding: 0.4rem;
+        }
+        li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration-color: rgba(255,255,255,0.7);
+            
+        }
+    }
+
+    &__copyright {
+        opacity: 0.7;
+    }
+
+    &__captcha {
+        opacity: 0.5;
+
+        a {
+            color: rgb(68,142,244);
+        }
+    }
+}

@@ -15,13 +15,16 @@ html {
 body {
     box-sizing: border-box;
     font-size: 1.6rem;
-    font-family: variables.$main-font;
+    font-family: sans-serif;
     background-color: black;
     color: white;
+    padding: 2.4rem;
 
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    // overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+main > *:not(:last-child){
+    margin-bottom: 5rem;
 }
