@@ -6,16 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        
         <title>Netflix Portugal - Veja séries de televisão e filmes online</title>
         <link rel="shortcut icon" href="images/netflix.ico" type="image/x-icon">
     </head>
 
     <body>
         
+        <div class="hero-bg"></div>
         <header class="header">
             <img src="images/logo.png" alt="Netflix Logo" class="header__logo"/>
             <div class="change-language">
@@ -34,17 +31,23 @@
             <button class="header__login-btn themed-btn">Iniciar sessão</button>            
         </header>
         <main>
-            <section class="cta">
-                <h1>Acesso ilimitado a filmes, séries e muito mais</h1>
-                <h2>A partir de 8,99 €. Cancele quando quiser.</h2>
+            <section class="main-section">
+                <h1 class="main-section__h1">Acesso ilimitado a filmes, séries e muito mais</h1>
+                <p>A partir de 8,99 €. Cancele quando quiser.</h2>
+                <h3 class="cta__h3 main-section__h3">Quer começar a ver? Introduza o seu endereço de e-mail para criar ou reactivar a sua conta.</h3>
+                <div class="cta__input-wrapper">
+                    <input type="text" class="cta__input-email">
+                    <label for="email" class="cta__input-label">Endereço de e-mail</label>
+                </div>
                 <button class="signup-btn themed-btn">Começar
                     <svg class="signup-btn-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24" height="24" data-icon="ChevronRightStandard" aria-hidden="true">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path>
-                </svg>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path>
+                    </svg>
                 </button>
-                <!--Quer começar a ver? Introduza o seu endereço de e-mail para criar ou reactivar a sua conta.
-                -->
             </section>
+            <div class="curve-container">
+                <div class="curve-container__curve"></div>
+            </div>
             <section class="trending">
                 <h2 class="trending__title">Tendências atuais</h2>
                 <div class="trending__list">
@@ -162,11 +165,11 @@
         </main>
 
         <footer class="footer">
-            <div class="footer__cta">
-                <h3 class="footer__cta-h3">Quer começar a ver? Introduza o seu endereço de e-mail para criar ou reactivar a sua conta.</h3>
-                <div class="footer__cta-input-wrapper">
-                    <input type="text" class="footer__cta-input-email">
-                    <label for="email" class="footer__cta-input-label">Endereço de e-mail</label>
+            <div class="cta">
+                <h3 class="cta__h3">Quer começar a ver? Introduza o seu endereço de e-mail para criar ou reactivar a sua conta.</h3>
+                <div class="cta__input-wrapper">
+                    <input type="text" class="cta__input-email">
+                    <label for="email" class="cta__input-label">Endereço de e-mail</label>
                 </div>
             </div>
 
