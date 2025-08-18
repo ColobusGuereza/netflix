@@ -1,5 +1,12 @@
+@use "../abstracts/mixins";
+
 .faqs {
-     
+    padding: 0 2.4rem;
+    
+    @include mixins.respond(phone) {
+        padding: 0 3.2rem;
+    }
+
     &__list {
         display: flex;
         flex-direction: column;

@@ -1,4 +1,12 @@
+@use "../abstracts/mixins";
+
 .features {
+    padding: 0 2.4rem;
+
+    @include mixins.respond(phone) {
+        padding: 0 3.2rem;
+    }
+
     &__title {
         padding-bottom: 1.6rem;
     }
@@ -7,7 +15,6 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 1.6rem;
-
     }
 
     &__feature {

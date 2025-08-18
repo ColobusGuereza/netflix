@@ -1,3 +1,4 @@
+@use "../abstracts/mixins";
 .header {
     display: inline-flex;
     justify-content: space-between;
@@ -5,6 +6,11 @@
     overflow: hidden;
     padding-bottom: 5rem;
     gap: 1rem;
+    padding: 0 2.4rem;
+
+    @include mixins.respond(phone) {
+        padding: 0 3.2rem;
+    }
 
     &__logo {
         width: 10rem;

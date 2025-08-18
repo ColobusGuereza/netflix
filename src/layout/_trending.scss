@@ -1,5 +1,12 @@
+@use "../abstracts/mixins";
+
 .trending {
     background-color: black;
+    padding: 0 2.4rem;
+
+    @include mixins.respond(phone) {
+        padding: 0 3.2rem;
+    }
 
     &__list {
         position: relative;
