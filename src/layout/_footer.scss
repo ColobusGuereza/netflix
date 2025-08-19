@@ -16,6 +16,10 @@
         padding: 0 8rem;
     }
 
+    @include mixins.respond(desktop) {
+        padding: 0 14.8rem;
+    }
+
     &__cta {
         display: flex;
         flex-direction: column;

@@ -11,6 +11,10 @@
         padding: 0 8rem;
     }
 
+    @include mixins.respond(desktop) {
+        padding: 0 14.8rem;
+    }
+
     &__title {
         padding-bottom: 1.6rem;
     }
@@ -23,6 +27,10 @@
         @include mixins.respond(tab-land) {
             grid-template-columns: repeat(2, minmax(32rem, 1fr));
         }
+
+        @include mixins.respond(desktop) {
+            grid-template-columns: repeat(4, minmax(24rem, 1fr));
+        }
     }
 
     &__feature {
@@ -33,6 +41,18 @@
         grid-template-rows: repeat(3, min-content);
         padding: 2.4rem 1.5rem 1.5rem 1.5rem;
         gap: 1.5rem;
+
+        @include mixins.respond(desktop) {
+            grid-template-rows: repeat(2, min-content) 1fr;
+        }
+
+        &-title {
+            @include mixins.respond(desktop) {
+                font-size: 2.4rem;
+                font-weight: 300;
+            }
+
+        }
         
         &-text {
             color: rgba(white, 0.7);
@@ -43,6 +63,7 @@
             grid-row: 3;
             justify-self: end;
             margin-right: -1rem;
+            align-self: end;
         }
     }
 }

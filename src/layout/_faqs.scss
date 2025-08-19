@@ -12,6 +12,10 @@
         padding-bottom: 6.4rem;
     }
 
+    @include mixins.respond(desktop) {
+        padding: 0 14.8rem;
+    }
+
     &__list {
         display: flex;
         flex-direction: column;

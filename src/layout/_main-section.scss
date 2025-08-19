@@ -31,6 +31,10 @@
     p {
         font-weight: 400;
         padding-bottom: 0.8rem;
+
+        @include mixins.respond(desktop) {
+            font-size: 2.4rem;
+        }
     }
 
     &__cta {
