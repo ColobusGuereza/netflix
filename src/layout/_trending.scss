@@ -4,8 +4,12 @@
     background-color: black;
     padding: 0 2.4rem;
 
-    @include mixins.respond(phone) {
+    @include mixins.respond(tab-port) {
         padding: 0 3.2rem;
+    }
+
+    @include mixins.respond(tab-land) {
+        padding-left: 8rem;
     }
 
     &__list {
@@ -20,8 +24,16 @@
         padding: 0.5rem 1rem;
         transition: transform 0.3s ease-in-out;
 
+        @include mixins.respond(tab-land) {
+            padding: 0.6rem 2.2rem;
+        }
+
         &-img {
             width: 11rem;
+
+            @include mixins.respond(tab-land) {
+                width: 14rem;
+            }
         }
 
         &-number {
@@ -58,7 +70,7 @@
         border: none;
         border-radius: 10rem;
         height: 60%;
-        width: 70%;
+        width: 2.4rem;
         font-weight: 700;
         font-size: 2rem;
 

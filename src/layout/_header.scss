@@ -2,19 +2,25 @@
 .header {
     display: inline-flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     overflow: hidden;
     padding-bottom: 5rem;
     gap: 1rem;
     padding: 0 2.4rem;
 
-    @include mixins.respond(phone) {
+    @include mixins.respond(tab-port) {
         padding: 0 3.2rem;
     }
 
     &__logo {
         width: 10rem;
         height: 3rem;
+        
+        @include mixins.respond(tab-land) {
+            width: 15rem;
+            height: 4rem;
+        }
     }
 
     .change-language {

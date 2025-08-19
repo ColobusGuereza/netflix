@@ -7,7 +7,7 @@
         font-weight: 400;
         padding-bottom: 1rem;
 
-        @include mixins.respond(phone) {
+        @include mixins.respond(tab-port) {
             text-align: center;
         }
     }
