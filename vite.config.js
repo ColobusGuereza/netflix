@@ -2,6 +2,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  base: '/netflix/', 
   css: {
     preprocessorOptions: {
       scss: {
