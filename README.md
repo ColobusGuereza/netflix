@@ -3,6 +3,7 @@
 A responsive clone of the Netflix homepage, focused purely on **styling and layout**.  
 Built as a practice project to revisit **HTML & SCSS**, with an emphasis on clean structure and responsive design.  
 
+🚀 **[Live Demo](https://colobusguereza.github.io/netflix/)**  
 ---
 
 ## Features  
